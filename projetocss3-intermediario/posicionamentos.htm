@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute e fixed)</title>
+    <style>
+
+        body {
+            background-color: #007fc7;
+        }
+
+        #container {
+            background-color: #FFF;
+            width: 800px;
+            margin: 10px auto;
+            padding: 10px;
+            position: relative;
+        }
+
+        p {
+            width: 300px;
+            padding: 5px;
+        }
+
+        .absolute {
+            border: 1px solid red;
+            background-color: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+        }
+
+        .relative {
+            position: relative;
+            /* top, right, bottom, left */
+            /* left: 300px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+
+        <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque accusantium, sit vel veniam nihil vero dolore officia ipsam aliquid eaque saepe similique consectetur natus iusto. Natus officiis labore excepturi.</p>
+
+        <p class="relative">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi deleniti, est laborum sapiente animi debitis vel nam quibusdam possimus exercitationem ratione aliquam vero excepturi! Possimus praesentium fugiat id porro sapiente.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias debitis maiores vitae in! Assumenda sint corporis itaque recusandae, placeat quam vitae dicta sunt minus consequatur consectetur quibusdam odit nisi.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias debitis maiores vitae in! Assumenda sint corporis itaque recusandae, placeat quam vitae dicta sunt minus consequatur consectetur quibusdam odit nisi.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias debitis maiores vitae in! Assumenda sint corporis itaque recusandae, placeat quam vitae dicta sunt minus consequatur consectetur quibusdam odit nisi.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero alias debitis maiores vitae in! Assumenda sint corporis itaque recusandae, placeat quam vitae dicta sunt minus consequatur consectetur quibusdam odit nisi.</p>
+    </div>
+</body>
+</html>
