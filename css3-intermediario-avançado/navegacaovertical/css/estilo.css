@@ -1,0 +1,145 @@
+/**********************
+ Seletore universal */
+
+/* 
+* {
+    border: 1px solid red;
+} */
+
+/*********************
+ {Seletor de texto */
+/* h1 {
+    color: green;
+} */
+
+/*******************
+Seletor de classe */
+
+/* .verde {
+    color: verde;
+}
+
+p.verde {
+    color: green;
+} */
+
+/****************
+Seletor de ID */
+
+/* #cabecalho {
+    border: 1px solid blue;
+} */
+
+/*******************
+Seletor de filho */
+
+/* li > a {
+    color: red;
+    text-decoration: none;
+} */
+
+/***********************
+ Seletor descendente */
+
+/*  li a {
+    color: green;
+ }
+
+ div a {
+    color: green;
+ } */
+
+ /****************************
+ Seletor de irmão adjacente */
+
+/*  h1+p {
+    color: red;
+ }
+ */
+
+ /*************************
+ Seletor de irmão geral */
+
+/*  h1~p {
+    color: pink;
+ }
+ */
+
+ /************************** 
+ Herança e especificidade */
+
+/* #pagina p {
+    color: blue !important;
+ }
+
+#pagina p {
+    color: red;
+ } */
+
+ /* * {
+    color: red;
+ } */
+
+/*  h2 { 
+    color: blue;
+ } */
+
+/*  h2#amarelo {
+    color: yellow;
+ } */
+
+/*  h2.verde {
+    color: green;
+ }
+ */
+
+ /*********************
+Barra de navegação vertical */
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} */
+
+/* li {
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}
+ */
+
+ ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+ }
+
+ ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b660 url(../imagens/menu.png);
+ }
+
+ a:hover {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+ }
+
+ #home .home a, #sobre .sobre a, #servicos .servicos a, #noticias .noticias a, #contato .contato a {
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+ }
+
+
+
+
+
+
+
