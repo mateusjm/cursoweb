@@ -5,6 +5,14 @@
     .btn-custom {
         margin: 5px 10px;
     }
+
+    div.container a img {
+        margin-left: 15px;
+    }
+
+    div.container button {
+        margin-right: 15px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
