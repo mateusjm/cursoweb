@@ -17,6 +17,10 @@
     nav ul li {
         margin-left: 20px;
     }
+
+    section div.albuns img {
+        display: none;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -27,6 +31,10 @@
 
     .btn-custom {
         margin: 10px 15px;
+    }
+
+    section div.albuns img {
+        display: none;
     }
 }
 
