@@ -21,6 +21,12 @@
     section div.albuns img {
         display: none;
     }
+
+    /* Celulares 30reg */
+
+    div.rotacionar img {
+        display: none;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -34,6 +40,12 @@
     }
 
     section div.albuns img {
+        display: none;
+    }
+
+    /* Celulares 30reg */
+
+    div.rotacionar img {
         display: none;
     }
 }
