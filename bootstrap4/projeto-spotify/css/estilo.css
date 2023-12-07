@@ -40,7 +40,11 @@ nav.navbar-transparente {
 
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,.5);
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: transparent;
+}
+
+button:focus {
+    outline: transparent;
 }
 
 .divisor {
@@ -168,3 +172,11 @@ h3 {
     font-weight: 700;
     letter-spacing: -0.04em;
 }
+
+/* Controles
+**************/
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
