@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        // 15/ 01 / 2017
+        var data1 = new Date(2017, 0, 15)
+        document.write(data1.toString())
+        document.write('<hr>')
+        
+        // 23/ 02 / 2017
+        var data2 = new Date(2017, 1, 23)
+        document.write(data2.toString())
+        document.write('<hr>')
+
+        // converter as datas para um valor que possa ser calculado
+        document.write(data1.getTime())
+        document.write('<hr>')
+        document.write(data2.getTime())
+        
+        // 01 / 01 / 1970
+        
+        // encontrar a quantidade de milissegundos entre data1 e data2
+        document.write('<hr>')
+        
+        // método abs deixa o valor absoluto
+        var resultado = Math.abs(data1.getTime() - data2.getTime())
+        document.write(resultado)
+        document.write('<hr>')
+        
+        
+        // 1d tem 24h
+        // 1h tem 60min
+        // 1min tem 60s
+        // 1s tem 1000ms
+        
+        // quantos milissegundos existem em um dia?
+        var dia = 1*24*60*60*1000
+        document.write(' 1 dia tem: ' + (dia) + ' milissegundos')
+
+
+        document.write('<hr>')
+        document.write('A diferença entre as data1 e data2 é de: ' + Math.ceil(resultado/dia) + ' dias')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

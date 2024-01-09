@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        /* var num1 = prompt('Digite um número:')
+        var operacao = prompt('Digite a operação: soma ou subtração')
+        var num2 = prompt('Digite um segundo número:')
+
+        function exibirResultado(callbackSoma, callbackSubtracao) {
+            if (operacao === 'soma') {
+                callbackSoma(num1, num2)
+            } else {
+                callbackSubtracao(num1, num2)
+            }
+        }
+
+
+        var callbackSoma = function(numero1, numero2) {
+            document.write('A soma entre '+ num1 + ' e ' + num2 + ' é: '+ (parseInt(numero1) + parseInt(numero2)) + '<hr>')
+        }
+        
+        var callbackSubtracao = function(numero1, numero2) {
+            document.write('A diferença entre '+ num1 + ' e ' + num2 + ' é: '+ (parseInt(numero1) - parseInt(numero2)) + '<hr>')
+        }
+
+        exibirResultado(callbackSoma, callbackSubtracao) */
+
+        var num1 = prompt('Digite um número:')
+        var operacao = prompt('Digite a operação: soma ou subtracao')
+        var num2 = prompt('Digite um segundo número:')
+
+        function calc(num1, num2, operacao) {
+
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+
+            var resultado = 0
+
+            if(operacao == 'soma') {
+                resultado = num1 + num2
+            }
+            
+            if(operacao == 'subtracao') {
+                resultado = num1 - num2
+            }
+            
+            return resultado
+        }
+
+        document.write('O resultado é: ' + calc(num1, num2, operacao))
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
