@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        function acao1() {
+            // onkeydown - acionado ao apertar
+            alert('Evento disparado')
+        }
+
+        function acao2() {
+            // onkeyup - acionado ao liberar
+            alert('Evento finalizado')
+        }
+
+        function acao3() {
+            // onkypress - acionado ao pressionar
+            alert('Evento pressionado')
+        }
+
+    </script>
+</head>
+<body>
+    <input onkeydown="acao1()" onkeyup="acao2()" onkeypress="acao3()" type="text">
+</body>
+</html>
