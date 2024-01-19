@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
+    <script>
+
+        function modificaEstilo(corDeFundo, largura, altura) {
+            document.getElementById('quadrado').style.backgroundColor = corDeFundo
+            document.getElementById('quadrado').style.width = largura
+            document.getElementById('quadrado').style.height = altura
+        }
+
+    </script>
 </head>
 <body>
     
+    <h3>Manipulando estilo</h3>
+
+    <button type="button" onclick="modificaEstilo('#FF0000' , '200px' , '100px')">Vermelho</button>
+    <button type="button" onclick="modificaEstilo('#00FF00' , '300px' , '200px')">Verde</button>
+    <button type="button" onclick="modificaEstilo('#0000FF' , '400px' , '300px')">Azul</button>
+    <hr>
+
+    <div style="border: 1px solid black; width: 100px; height: 100px;" id="quadrado"></div>
+
 </body>
 </html>

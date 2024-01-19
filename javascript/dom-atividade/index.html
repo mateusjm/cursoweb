@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        function acionaCampo() {
+            document.getElementById('campo').style.backgroundColor = "yellow"
+        }
+
+        function mudaCampo() {
+            let valorAtual = document.getElementById('campo').value
+
+            if(valorAtual.length < 3) {
+                document.getElementById('campo').style.backgroundColor = "red"
+            } else {
+                document.getElementById('campo').style.backgroundColor = "green"
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="campo" onclick="acionaCampo()" onblur="mudaCampo()">
+</body>
+</html>
