@@ -6,23 +6,28 @@
     <title>Array multidimensional</title>
     <script>
 
-        let lista_frutas = Array()
+        let lista_coisas = []
 
-        lista_frutas[0] = 'Banana'
-        lista_frutas[1] = 'Maçã'
+        lista_coisas['frutas'] = Array()
+        lista_coisas['pessoas'] = []
+
+        lista_coisas['frutas'].push('Banana')
+        lista_coisas['frutas'].unshift('Uva')
+        
+        console.log(lista_coisas)
 
         // incluir elemento no inicio array
-        lista_frutas.unshift('Laranja')
+        //lista_frutas.unshift('Laranja')
         // incluir elemento no final array
-        lista_frutas.push('Uva')
+        //lista_frutas.push('Uva')
         
         //excluir elemento no inicio array
-        lista_frutas.shift()
+        //lista_frutas.shift()
         //excluir elemento no final array
-        lista_frutas.pop()
+        //lista_frutas.pop()
 
 
-        console.log(lista_frutas)
+        
 
     </script>
 </head>
