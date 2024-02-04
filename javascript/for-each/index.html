@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        //let listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+        //let listaCoisas = ['Mesa', 'Janela', 'Gurda-roupa', 'Cama']
+
+        let listaFuncionarios = Array()
+        
+        listaFuncionarios['x'] = 'Viviane'
+        listaFuncionarios[false] = 'Rosângela'
+        listaFuncionarios[3] = 'Miguel'
+        listaFuncionarios[27] = 'Lucas'
+        listaFuncionarios[-12] = 'Fernanda'
+
+        let f = function(valor, indice) {
+                console.log(valor, indice)
+        }
+
+        listaFuncionarios.forEach(f)
+        //listaCoisas.forEach(f)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

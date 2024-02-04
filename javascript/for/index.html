@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>While</title>
+    <title>For</title>
     <script>
 
-        let x = 1
-        while (x <= 10) {
-            x++
+        for (let x = 10; x >= 0 ; x-= 4) {
             
-            if (x === 5) {
-                continue
-            }
-            
-            console.log(x)
-            
+            document.write(x + '<br>')
+
+            // break
+            // continue
+
         }
+
 
     </script>
 </head>
