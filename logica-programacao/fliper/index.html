@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flíper</title>
+    <script>
+
+        let p = parseInt(prompt('Portinha P:'))
+        let r = parseInt(prompt('Portinha R:'))
+
+        if (p >= 0 && p <= 1 && r >= 0 && r <=1) {
+            
+            if ( p === 0 ) {
+                console.log('C')
+                
+            } else if ( p === 1 && r === 0) {
+                console.log('B')
+                
+            } else if ( p === 1 && r === 1) {
+                console.log('A')
+
+            }
+
+        } else {
+            console.log('O número P pode ser 0 ou 1. O número R pode ser 0 ou 1.')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
