@@ -3,6 +3,23 @@
     let altura = 0
     let largura = 0
     let vidas = 1
+    let tempo = 15
+
+    let criaMosquitoTempo = 1500
+
+    let nivel = window.location.search // o search entrega somente o parametro que é definido no painel inicial
+    nivel = nivel.replace('?', '') // usaremos o replace para substituir o ? para ''
+
+    if (nivel === 'normal') {
+        // 2000 milissegundos
+        criaMosquitoTempo = 2000
+    } else if (nivel === 'dificil') {
+        // 1500 milissegundos
+        criaMosquitoTempo = 1500
+    } else if (nivel === 'chucknorris') {
+        // 1000 milissegundos
+        criaMosquitoTempo = 1000
+    }
     
     function ajustaTamanhoPalcoJogo() {
         altura = window.innerHeight
@@ -13,10 +30,21 @@
 
     ajustaTamanhoPalcoJogo()
 
-    // ajustar a posição dinamica do mosquito
+    let cronometro = setInterval(function() {
+        
+        tempo -= 1
 
-    let posicaoX = 0
-    let posicaoY = 0
+        if (tempo < 0) {
+            clearInterval(criaMosca)
+            clearInterval(cronometro)
+            window.location.href = 'vitoria.html'
+        } else  {
+            document.getElementById('cronometro').innerHTML = tempo
+        }
+        
+    }, 1000)
+
+    // ajustar a posição dinamica do mosquito
 
     function posicaoRandomica() {
 
@@ -29,17 +57,18 @@
             } else {
                 document.getElementById('v' + vidas).src = "imagens/coracao_vazio.png"   
                 // vidas começa valendo 1 e acrescido a cada remove()
+                vidas++
             }
             
-            vidas++
+            
         }
         
 
-        posicaoX = Math.floor(Math.random() * largura) - 90 // math.florr arredonda para baixo
-        posicaoY = Math.floor(Math.random() * altura) - 90 // math.florr arredonda para baixo
+        let posicaoX = Math.floor(Math.random() * largura) - 90 // math.florr arredonda para baixo
+        let posicaoY = Math.floor(Math.random() * altura) - 90 // math.florr arredonda para baixo
 
-        posicaoX = posicaoX < 0? 0: posicaoX // posicao X recebe 0 se for menor que 0
-        posicaoY = posicaoY < 0? 0: posicaoY // posicao Y recebe 0 se for menor que 0
+        posicaoX = posicaoX < 0 ? 0 : posicaoX // posicao X recebe 0 se for menor que 0
+        posicaoY = posicaoY < 0 ? 0 : posicaoY // posicao Y recebe 0 se for menor que 0
 
             
         console.log(posicaoX, posicaoY)
@@ -63,13 +92,10 @@
 
         document.body.appendChild(mosquito) // atribui o elemento html no body, e ele se tornou filho
 
-        console.log(ladoAleatorio())
-
     }
 
     function tamanhoAleatorio() {
         let classe = Math.floor(Math.random() * 3)
-        console.log(classe)
 
         switch (classe) {
             case 0:
