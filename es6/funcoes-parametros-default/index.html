@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções Parâmetros Default</title>
+    <script>
+
+        function contarUmaHistoria(personagem = 'Fubá', atividade = 'comer', dono = 'Jorge') {
+            // Fubá é um parâmetro default caso a variável não receba um parâmetro
+            document.write(`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${dono}, e eles viveram felizes para sempre.`)
+        }
+
+        // através do undefined a função recebe o padrão default 
+            contarUmaHistoria(undefined, 'correr', 'Pedro')
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const</title>
+    <script>
+
+        // é uma boa prática definir constantes com letras maíusculas
+        const SERIE = 'Friends'
+
+        function x() {
+            // o escopo global não interfere no escopo da função e vice-versa
+            const SERIE = 'The Walking Dead'
+            console.log(SERIE)
+        }
+
+        x()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
