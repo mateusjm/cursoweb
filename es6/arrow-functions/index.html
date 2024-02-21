@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <script>
+
+        let quadrado1 = function(x = 0) {
+            return x * x
+        }
+
+        let quadrado2 = x => {
+            // return sem parênteses e function
+            return x * x
+        }
+
+        let mul = (x, y) => x * y // return implicito
+
+
+        document.write( quadrado2(3) + '<br>')
+        document.write( mul(3, 5) + '<br>')
+
+        let ParOuImpar = function(numero) {
+            if (numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+        }
+
+        document.write(ParOuImpar(7)  + '<br>')
+        
+        /* let ParOuImpar1 = numero => {
+            if (numero % 2 === 0) {
+                return 'par'
+            } else {
+                return 'ímpar'
+            }
+        } */
+
+        let ParOuImpar1 = numero => numero % 2 === 0 ? 'par' : 'ìmpar' // retorno implícito, operador ternário
+        
+        document.write(ParOuImpar1(8)  + '<br>')
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
