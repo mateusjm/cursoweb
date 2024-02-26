@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <script>
+
+        class Livraria {
+
+            constructor() {
+                this.qtde_livros = 80
+                this.funcionarios = 5
+                this.saldo = 1000
+            }
+
+            adicionarLivros(livro) {
+                this.qtde_livros += livro
+            }
+
+            ajustarFuncionario(pessoa) {
+                this.funcionarios += pessoa
+            }
+
+            depositarSaldo(deposito) {
+                this.saldo += deposito
+            }
+
+            consultarSaldo() {
+                return this.saldo
+            }
+
+        }
+
+        let Amazon = new Livraria()
+        let Mercado_Livre = new Livraria()
+
+        Amazon.adicionarLivros(20)
+        Amazon.ajustarFuncionario(5)
+        Amazon.depositarSaldo(9000)
+        console.log(Amazon)
+
+        Mercado_Livre.adicionarLivros(-30)
+        Mercado_Livre.ajustarFuncionario(-4)
+        Mercado_Livre.depositarSaldo(-900)
+        console.log(Mercado_Livre)
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

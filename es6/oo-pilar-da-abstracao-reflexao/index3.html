@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexão</title>
+    <script>
+        
+        class Pessoa {
+
+            constructor(nome, altura, peso, sexo) {
+                this.nome = nome
+                this.altura = altura
+                this.peso = peso
+                this.sexo = sexo
+            }
+
+            identificarSexo() {
+                if(this.sexo === 'm') {
+                    console.log('masculino')
+                } else {
+                    console.log('feminino')
+                }
+            }
+
+
+        }
+        
+        let pessoas = Array()
+        pessoas.push(new Pessoa('Mateus', 1.8, 72, 'm'))
+        pessoas.push(new Pessoa('Raíssa', 1.7, 70, 'f'))
+        pessoas.push(new Pessoa('Paulo', 1.8, 90, 'm'))
+        pessoas.push(new Pessoa('Lourdinha', 1.65, 88, 'f'))
+
+        console.log(pessoas)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
