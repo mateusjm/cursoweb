@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tv por Assinatura</title>
+    <script>
+
+        class Canal {
+            constructor(canais) {
+                this.canais = canais
+            }
+        }
+
+        let canais = Array() 
+        canais.push(new Canal(1, 2 , 3, 4, 5))
+        canais.push(new Canal(6, 7 , 8, 9, 10))
+        canais.push(new Canal(11, 12 , 13, 14, 15))
+
+        
+        class Tv {
+            constructor(canais, valor, contrato) {
+                this.qtde_canais = canais
+                this.valor = valor
+                this.contrato = contrato
+            }
+        }
+
+        let pacotes = Array()
+        pacotes.push(new Tv(2, 100, 'mensal'))
+        pacotes.push(new Tv(10, 225, 'trimestral'))
+        pacotes.push(new Tv(15, 300, 'simestral'))
+
+        console.log(pacotes)
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
