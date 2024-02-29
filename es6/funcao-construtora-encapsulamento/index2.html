@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        
+        let Carro = function() {
+
+            let velocidadeMaxima = 180
+            let quilometrosRodados = 0
+
+            this.cor = 'Amarelo'
+            this.modelo = 'Chevette'
+            this.velocidadeAtual = 0
+            this.acelerar = function() {
+                let velocidade = this.getVelocidadeAtual() + 50
+                if (velocidade > velocidadeMaxima) {
+                    velocidade = velocidadeMaxima
+                }
+
+                this.setVelocidadeAtual(velocidade)
+                setQuilometrosRodados(0.1)
+                console.log(quilometrosRodados)
+            }
+
+            this.getVelocidadeAtual = function() {
+                return this.velocidadeAtual
+            }
+
+            this.setVelocidadeAtual = function(velocidadeAtual) {
+                this.velocidadeAtual = velocidadeAtual
+            }
+
+            let setQuilometrosRodados = function(q) {
+                quilometrosRodados += q
+            }
+
+        }
+
+        let carro = new Carro()
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+        carro.acelerar()
+        console.log(carro.getVelocidadeAtual())
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
