@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Factory</title>
+    <script>
+
+        let BicicletaFactory = function(cor, marcha, aro) {
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar() { console.log('Método pedalar executado') }
+            }
+        }
+
+        let Bicicleta1 = BicicletaFactory()
+
+        Bicicleta1.cor = 'Verde'
+        Bicicleta1.marcha = 18
+        Bicicleta1.aro = 29
+
+        console.log(Bicicleta1)
+
+        let Bicicleta2 = BicicletaFactory()
+
+        Bicicleta2.cor = 'Vermelho'
+        Bicicleta2.marcha = 6
+        Bicicleta2.aro = 22
+
+        console.log(Bicicleta2)
+
+        let Bicicleta3 = BicicletaFactory('Preta', 20, 16)
+
+        console.log(Bicicleta3)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
