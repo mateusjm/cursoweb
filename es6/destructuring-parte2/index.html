@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+
+        let produto = {
+            descricao: 'Notebook',
+            preco: 1800,
+            detalhes: {
+                fabricante: 'abc',
+                modelo: undefined
+            }
+        }
+
+        /* let { descricao, preco } = produto
+        console.log(descricao, preco) */
+        
+        /* let { descricao: d, preco: p } = produto
+        console.log(d, p)
+
+        let sofa = {
+            descricao: 'Sofanete',
+            preco: 1400,
+            detalhes: {
+                cor: 'Marrom',
+                tipo: 'Cama'
+            }
+        }
+
+        let {descricao:x , preco:y = 2000, desconto:z = 100} = sofa
+        console.log(x, y, z) */
+
+        let { detalhes: { fabricante: f, modelo: m = 'Não informado'}} = produto
+        console.log(f, m)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
